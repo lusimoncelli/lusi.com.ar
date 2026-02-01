@@ -1,69 +1,83 @@
 <!doctype html>
-<html lang=en-us>
+<html lang=es-es>
     <head>
         <title>Proyectos | Lusi</title>
         <meta charset=utf-8>
         <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
         <meta name=viewport content="width=device-width,minimum-scale=1">
-        <meta name=description content="Lucía Simoncelli | Bioengineer | Product">
+        <meta name=description content="Lucía Simoncelli | Bioingeniera | Research Analyst">
         <meta name=generator content="Hugo 0.115.3">
         <meta name=ROBOTS content="INDEX, FOLLOW">
         <link rel="shortcut icon" href=/images/coral.png type=image/x-icon>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel=stylesheet href=/css/style.css>
         <link href=/cv/index.xml rel=alternate type=application/rss+xml title="Lucía Simoncelli">
         <link href=/cv/index.xml rel=feed type=application/rss+xml title="Lucía Simoncelli">
     </head>
     <body>
         <nav class=navigation>
-            <a href=/>
-            <span class=arrow>←</span>
-            Inicio
-            </a>
-            <a href=/projects>Proyectos</a>
-            <a href=/cv>CV</a>
-            <a class=button href=/en/projects>EN</a>
+            <div class=nav-container>
+                <a href=/>
+                <span class=arrow>←</span>
+                Inicio
+                </a>
+                <a href=/projects>Proyectos</a>
+                <a href=/cv>CV</a>
+                <a class="button btn-primary" href=/en/projects>EN</a>
+            </div>
         </nav>
 <main class=main>
     <header class=profile>
-        <a href=/images/avatar.jpg>
-            <img class=avatar alt=avatar src=/images/avatar.jpg>
-        </a>
+        <div class=avatar-container>
+            <a href=/images/avatar.jpg>
+                <img class=avatar alt="Foto de perfil de Lucía Simoncelli" src=/images/avatar.jpg>
+            </a>
+        </div>
         <h1>Lucía Simoncelli</h1>
-        <h2>Bioingeniera | Scrum Master @ Wúru</h2>
+        <h2>Bioingeniera | Research Analyst @ Adivo, a Herspiegel Company</h2>
     </header>
-    <section id=section>
+    <section id=section class=content-section>
         <h2 id=projects>
             Proyectos<a href=#projects class=anchor>🔗</a>
         </h2>
-        <blockquote>
-            Última actualización: 20 de Junio de 2024
-        </blockquote>
-        <h3 id=dibujito>
-            🎨 Dibujito del día :)<a href=#dibujito class=anchor>🔗</a>
-        </h3>
-        <p><a href="https://github.com/lusimoncelli/dibujitodeldia">Dibujito del día</a> es una WebApp con funcionalidades similares a Microsoft Paint, desarrollada usando HTML, CSS y JavaScript. Todos los días le presenta al usuario una nueva palabra a modo de inspiración para dibujar.</p>
+        <p class=last-updated><em>Última actualización: 20 de Junio de 2024</em></p>
 
-        <h3 id=barcoapp>
-            👓 BARCO App: Comunicación Alternativa y Aumentativa<a href=#barcoapp class=anchor>🔗</a>
-        </h3>
-        <p><a href="https://github.com/lusimoncelli/barco-aac">B.A.R.C.O. App</a> es una App de Android desarrollada en Java compatible con un prototipo de anteojos con sensores IR para facilitar la comunicación de personas con dificultades motoras y del habla. Al detectar parpadeos permite al usuario ingresar texto en un teclado o seleccionar pictogramas.</p>
-        
-        <h3 id=kidney-segmentation>
-            ⚕️ Clasificación de patologías renales a partir de tomografías<a href=#kidney-segmentation class=anchor>🔗</a>
-        </h3>
-        <p>Este trabajo consiste en una <a href="https://github.com/lusimoncelli/kidney_segmentation">GUI para clasificar patologías renales</a> a partir de imágenes de tomografías computarizadas. Realizado en Python, permite cargar una imagen, seleccionar la zona renal y luego aplica un algoritmo de segmentación que selecciona los riñones y clasifica la patología en cálculos, tumores, quistes, o ausencia de patología. El algoritmo de clasificación de Machine Learning es un Decision Tree entrenado a partir de diagnósticos médicos.</p>
+        <div class=project-card>
+            <h3 id=dibujito>
+                🎨 Dibujito del día :)<a href=#dibujito class=anchor>🔗</a>
+            </h3>
+            <p><a href="https://github.com/lusimoncelli/dibujitodeldia">Dibujito del día</a> es una WebApp con funcionalidades similares a Microsoft Paint, desarrollada usando HTML, CSS y JavaScript. Todos los días le presenta al usuario una nueva palabra a modo de inspiración para dibujar.</p>
+        </div>
 
-        <h3 id=botlusi>
-            🤖 Botlusi<a href=#botlusi class=anchor>🔗</a>
-        </h3>
-        <p><a href="https://github.com/lusimoncelli/botlusi">Botlusi</a> (<a href="https://x.com/botlusi">@botlusi</a>) es un bot de Twitter/X construido en Python y deployeado en AWS Lambda. Empezó simplemente respondiendo menciones a partir de una lista pre-definida de respuestas. Más tarde evolucionó a escribir sus propios posts usando GPT-2.5 entrenado a partir de los posteos de los usuarios que seguía.</p>
-        
+        <div class=project-card>
+            <h3 id=barcoapp>
+                👓 BARCO App: Comunicación Alternativa y Aumentativa<a href=#barcoapp class=anchor>🔗</a>
+            </h3>
+            <p><a href="https://github.com/lusimoncelli/barco-aac">B.A.R.C.O. App</a> es una App de Android desarrollada en Java compatible con un prototipo de anteojos con sensores IR para facilitar la comunicación de personas con dificultades motoras y del habla. Al detectar parpadeos permite al usuario ingresar texto en un teclado o seleccionar pictogramas.</p>
+        </div>
+
+        <div class=project-card>
+            <h3 id=kidney-segmentation>
+                ⚕️ Clasificación de patologías renales a partir de tomografías<a href=#kidney-segmentation class=anchor>🔗</a>
+            </h3>
+            <p>Este trabajo consiste en una <a href="https://github.com/lusimoncelli/kidney_segmentation">GUI para clasificar patologías renales</a> a partir de imágenes de tomografías computarizadas. Realizado en Python, permite cargar una imagen, seleccionar la zona renal y luego aplica un algoritmo de segmentación que selecciona los riñones y clasifica la patología en cálculos, tumores, quistes, o ausencia de patología. El algoritmo de clasificación de Machine Learning es un Decision Tree entrenado a partir de diagnósticos médicos.</p>
+        </div>
+
+        <div class=project-card>
+            <h3 id=botlusi>
+                🤖 Botlusi<a href=#botlusi class=anchor>🔗</a>
+            </h3>
+            <p><a href="https://github.com/lusimoncelli/botlusi">Botlusi</a> (<a href="https://x.com/botlusi">@botlusi</a>) es un bot de Twitter/X construido en Python y deployeado en AWS Lambda. Empezó simplemente respondiendo menciones a partir de una lista pre-definida de respuestas. Más tarde evolucionó a escribir sus propios posts usando GPT-2.5 entrenado a partir de los posteos de los usuarios que seguía.</p>
+        </div>
+
     </section>
 </main>
 <footer id=footer>
     <div id=social>
-        <a class=symbol href=https://github.com/lusimoncelli rel=me target=_blank>
-            <svg fill="#bbb" width="28" height="28" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <a class=symbol href=https://github.com/lusimoncelli rel=me target=_blank aria-label="Perfil de GitHub">
+            <svg fill="currentColor" width="32" height="32" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
                 <title>Github</title>
                 <defs/>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -76,8 +90,8 @@
                 </g>
             </svg>
         </a>
-        <a class=symbol href=https://linkedin.com/in/lusimoncelli rel=me target=_blank>
-            <svg width="28" height="28" fill="#bbb" viewBox="0 0 500 500">
+        <a class=symbol href=https://linkedin.com/in/lusimoncelli rel=me target=_blank aria-label="Perfil de LinkedIn">
+            <svg width="32" height="32" fill="currentColor" viewBox="0 0 500 500">
                 <g fill="none" fill-rule="evenodd">
                     <rect width="500" height="500" fill="#bbb" rx="50"/>
                     <path fill="#fff" d="M154.703 100.183c-19.121.0-34.689 15.565-34.703 34.701.0 19.136 15.568 34.704 34.703 34.704 19.128.0 34.688-15.568 34.688-34.704.0-19.134-15.561-34.701-34.688-34.701zm26.045 83.348h-52.094a4.488 4.488.0 00-4.488 4.489v167.675a4.488 4.488.0 004.488 4.488h52.093a4.49 4.49.0 004.489-4.488V188.02a4.486 4.486.0 00-4.488-4.489zm133.176-1.974c-19.064.0-35.817 5.805-46.04 15.271v-8.808c0-2.48-2.01-4.489-4.489-4.489h-49.971a4.489 4.489.0 00-4.489 4.489v167.675a4.488 4.488.0 004.489 4.488h52.044a4.49 4.49.0 004.489-4.488v-82.957c0-23.802 4.378-38.555 26.227-38.555 21.526.026 23.137 15.846 23.137 39.977v81.535a4.489 4.489.0 004.49 4.488h52.068a4.489 4.489.0 004.488-4.488v-91.977c-.001-38.253-7.553-82.161-66.443-82.161z"/>

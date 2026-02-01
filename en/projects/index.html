@@ -5,63 +5,77 @@
         <meta charset=utf-8>
         <meta http-equiv=x-ua-compatible content="IE=edge,chrome=1">
         <meta name=viewport content="width=device-width,minimum-scale=1">
-        <meta name=description content="Lucía Simoncelli | Bioengineer | Product">
+        <meta name=description content="Lucía Simoncelli | Bioengineer | Research Analyst">
         <meta name=generator content="Hugo 0.115.3">
         <meta name=ROBOTS content="INDEX, FOLLOW">
         <link rel="shortcut icon" href=/images/coral.png type=image/x-icon>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel=stylesheet href=/css/style.css>
     </head>
     <body>
         <nav class=navigation>
-            <a href=/en>
-            <span class=arrow>←</span>
-            Home
-            </a>
-            <a href=/en/projects>Projects</a>
-            <a href=/en/cv>Résumé</a>
-            <a class=button href=/projects>ES</a>
+            <div class=nav-container>
+                <a href=/en>
+                <span class=arrow>←</span>
+                Home
+                </a>
+                <a href=/en/projects>Projects</a>
+                <a href=/en/cv>Résumé</a>
+                <a class="button btn-primary" href=/projects>ES</a>
+            </div>
         </nav>
 <main class=main>
     <header class=profile>
-        <a href=/images/avatar.jpg>
-            <img class=avatar alt=avatar src=/images/avatar.jpg>
-        </a>
+        <div class=avatar-container>
+            <a href=/images/avatar.jpg>
+                <img class=avatar alt="Profile photo of Lucía Simoncelli" src=/images/avatar.jpg>
+            </a>
+        </div>
         <h1>Lucía Simoncelli</h1>
-        <h2>Bioengineer | Scrum Master @ Wúru</h2>
+        <h2>Bioengineer | Research Analyst @ Adivo, a Herspiegel Company</h2>
     </header>
-    <section id=section>
+    <section id=section class=content-section>
         <h2 id=projects>
             Projects<a href=#projects class=anchor>🔗</a>
         </h2>
-        <blockquote>
-            Last update: June 20th 2024
-        </blockquote>
-        <h3 id=dibujito>
-            🎨 Dibujito del día :)<a href=#dibujito class=anchor>🔗</a>
-        </h3>
-        <p><a href="https://github.com/lusimoncelli/dibujitodeldia">Dibujito del día</a>  is a WebApp with functionalities similar to Microsoft Paint, developed using HTML, CSS, and JavaScript. Every day, it presents the user with a new word as inspiration for drawing.</p>
+        <p class=last-updated><em>Last update: June 20th 2024</em></p>
 
-        <h3 id=barcoapp>
-            👓 BARCO App: Augmentative and Alternative Communication<a href=#barcoapp class=anchor>🔗</a>
-        </h3>
-        <p><a href="https://github.com/lusimoncelli/barco-aac">B.A.R.C.O. App</a> is an Android app developed in Java that is compatible with a prototype of glasses equipped with IR sensors to facilitate communication for individuals with motor and speech difficulties. By detecting blinks, it allows the user to input text on a keyboard or select pictograms.</p>
-        
-        <h3 id=kidney-segmentation>
-            ⚕️ Classification of Kidney Pathologies from CT Scans<a href=#kidney-segmentation class=anchor>🔗</a>
-        </h3>
-        <p>This projects involves a <a href="https://github.com/lusimoncelli/kidney_segmentation">GUI for classifying kidney pathologies</a> from CT Scans images. Developed in Python, it allows users to load an image, select the kidney region, and then applies a segmentation algorithm that isolates the kidneys and classifies the pathology as stones, tumors, cysts, or no pathology. The Machine Learning classification algorithm used is a Decision Tree trained with medical diagnoses..</p>
+        <div class=project-card>
+            <h3 id=dibujito>
+                🎨 Dibujito del día :)<a href=#dibujito class=anchor>🔗</a>
+            </h3>
+            <p><a href="https://github.com/lusimoncelli/dibujitodeldia">Dibujito del día</a> is a WebApp with functionalities similar to Microsoft Paint, developed using HTML, CSS, and JavaScript. Every day, it presents the user with a new word as inspiration for drawing.</p>
+        </div>
 
-        <h3 id=botlusi>
-            🤖 Botlusi<a href=#botlusi class=anchor>🔗</a>
-        </h3>
-        <p><a href="https://github.com/lusimoncelli/botlusi">Botlusi</a> (<a href="https://x.com/botlusi">@botlusi</a>) is a Twitter/X bot built in Python and deployed on AWS Lambda. It started by simply responding to mentions using a pre-defined list of responses. Later, it evolved to generate its own posts using GPT-2.5, trained on the tweets of the users it followed.</p>
-        
+        <div class=project-card>
+            <h3 id=barcoapp>
+                👓 BARCO App: Augmentative and Alternative Communication<a href=#barcoapp class=anchor>🔗</a>
+            </h3>
+            <p><a href="https://github.com/lusimoncelli/barco-aac">B.A.R.C.O. App</a> is an Android app developed in Java that is compatible with a prototype of glasses equipped with IR sensors to facilitate communication for individuals with motor and speech difficulties. By detecting blinks, it allows the user to input text on a keyboard or select pictograms.</p>
+        </div>
+
+        <div class=project-card>
+            <h3 id=kidney-segmentation>
+                ⚕️ Classification of Kidney Pathologies from CT Scans<a href=#kidney-segmentation class=anchor>🔗</a>
+            </h3>
+            <p>This projects involves a <a href="https://github.com/lusimoncelli/kidney_segmentation">GUI for classifying kidney pathologies</a> from CT Scans images. Developed in Python, it allows users to load an image, select the kidney region, and then applies a segmentation algorithm that isolates the kidneys and classifies the pathology as stones, tumors, cysts, or no pathology. The Machine Learning classification algorithm used is a Decision Tree trained with medical diagnoses.</p>
+        </div>
+
+        <div class=project-card>
+            <h3 id=botlusi>
+                🤖 Botlusi<a href=#botlusi class=anchor>🔗</a>
+            </h3>
+            <p><a href="https://github.com/lusimoncelli/botlusi">Botlusi</a> (<a href="https://x.com/botlusi">@botlusi</a>) is a Twitter/X bot built in Python and deployed on AWS Lambda. It started by simply responding to mentions using a pre-defined list of responses. Later, it evolved to generate its own posts using GPT-2.5, trained on the tweets of the users it followed.</p>
+        </div>
+
     </section>
 </main>
 <footer id=footer>
     <div id=social>
-        <a class=symbol href=https://github.com/lusimoncelli rel=me target=_blank>
-            <svg fill="#bbb" width="28" height="28" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <a class=symbol href=https://github.com/lusimoncelli rel=me target=_blank aria-label="GitHub Profile">
+            <svg fill="currentColor" width="32" height="32" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
                 <title>Github</title>
                 <defs/>
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -74,8 +88,8 @@
                 </g>
             </svg>
         </a>
-        <a class=symbol href=https://linkedin.com/in/lusimoncelli rel=me target=_blank>
-            <svg width="28" height="28" fill="#bbb" viewBox="0 0 500 500">
+        <a class=symbol href=https://linkedin.com/in/lusimoncelli rel=me target=_blank aria-label="LinkedIn Profile">
+            <svg width="32" height="32" fill="currentColor" viewBox="0 0 500 500">
                 <g fill="none" fill-rule="evenodd">
                     <rect width="500" height="500" fill="#bbb" rx="50"/>
                     <path fill="#fff" d="M154.703 100.183c-19.121.0-34.689 15.565-34.703 34.701.0 19.136 15.568 34.704 34.703 34.704 19.128.0 34.688-15.568 34.688-34.704.0-19.134-15.561-34.701-34.688-34.701zm26.045 83.348h-52.094a4.488 4.488.0 00-4.488 4.489v167.675a4.488 4.488.0 004.488 4.488h52.093a4.49 4.49.0 004.489-4.488V188.02a4.486 4.486.0 00-4.488-4.489zm133.176-1.974c-19.064.0-35.817 5.805-46.04 15.271v-8.808c0-2.48-2.01-4.489-4.489-4.489h-49.971a4.489 4.489.0 00-4.489 4.489v167.675a4.488 4.488.0 004.489 4.488h52.044a4.49 4.49.0 004.489-4.488v-82.957c0-23.802 4.378-38.555 26.227-38.555 21.526.026 23.137 15.846 23.137 39.977v81.535a4.489 4.489.0 004.49 4.488h52.068a4.489 4.489.0 004.488-4.488v-91.977c-.001-38.253-7.553-82.161-66.443-82.161z"/>
